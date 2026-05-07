@@ -194,9 +194,9 @@ const Hero = () => {
               Aberta 24 horas por dia
             </div>
             <h1 className="text-6xl lg:text-8xl font-black leading-[1.05] tracking-tighter mb-8 text-slate-900">
-              Roupas limpas <br/>
-              e secas em <br/>
-              <span className="text-lavanderia-green">menos de 1h.</span>
+              Roupa suja <br/>
+              se lava <br/>
+              <span className="text-lavanderia-green">AQUI.</span>
             </h1>
             <p className="text-slate-500 max-w-md text-xl leading-relaxed mb-10 font-medium">
               A lavanderia mais completa de Formosa. Conveniência, tecnologia e cuidado impecável para suas roupas.
@@ -325,28 +325,28 @@ const Units = () => {
     {
       name: "Loja 01 - Posto Paraná",
       price: "15,99",
-      address: "Av. Maestro João Luiz do Espírito Santo, Formosa-GO",
+      address: "N 1234 anexo Posto Paranã, Formosa-GO",
       maps: "https://maps.google.com",
       image: "https://res.cloudinary.com/dqukldtq1/image/upload/v1777562155/WhatsApp_Image_2026-04-27_at_4.22.38_PM_lveoi7.jpg"
     },
     {
-      name: "Loja 02 - Saída p/ Planaltina",
+      name: "Loja 02 - Rua Auta Vidal saída para Planaltina de Goiás",
       price: "15,99",
-      address: "Rodovia BR-020, KM 02, Saída para Planaltina de Goiás",
+      address: "Rua Auta Vidal n 32 centro Formosa Goiás cep 73801480",
       maps: "https://maps.google.com",
       image: "https://res.cloudinary.com/dqukldtq1/image/upload/v1777562155/WhatsApp_Image_2026-04-27_at_4.22.59_PM_qb20cd.jpg"
     },
     {
       name: "Loja 03 - Posto Indaiá",
       price: "19,99",
-      address: "Avenida Brasília, Próximo ao Posto Indaiá, Formosa-GO",
+      address: "Go-118 km 05 Zona rural Planaltina Goiás",
       maps: "https://maps.google.com",
       image: "https://res.cloudinary.com/dqukldtq1/image/upload/v1777562155/WhatsApp_Image_2026-04-27_at_4.25.16_PM_sdif9p.jpg"
     },
     {
       name: "Loja 04 - Distrito do Bezerra",
       price: "19,99",
-      address: "Rua Principal, Distrito do Bezerra, Formosa-GO",
+      address: "Avenida Maria Paulina Gomes Pereira n 30 centro Distrito do Bezerra cep 73817000",
       maps: "https://maps.google.com",
       image: "https://res.cloudinary.com/dqukldtq1/image/upload/v1777562155/WhatsApp_Image_2026-04-27_at_4.23.59_PM_i4zotv.jpg"
     }
@@ -409,9 +409,9 @@ const DeixeComAGente = () => {
   const steps = [
     { title: "MEDIÇÃO", desc: "Coloque suas roupas no cesto de medida." },
     { title: "ARMÁRIO", desc: "Escolha um armário disponível para deixar seus pertences." },
-    { title: "PAGAMENTO", desc: "Realize o pagamento na maquininha ou via app." },
+    { title: "PAGAMENTO", desc: "Pagamento somente na maquininha." },
     { title: "COMUNICAÇÃO", desc: "Envie o comprovante para nosso WhatsApp (61) 99915-5433." },
-    { title: "PROCESSAMENTO", desc: "Nossa equipe cuida de tudo: lavamos, secamos e dobramos." },
+    { title: "PROCESSAMENTO", desc: "Nossa equipe cuida de tudo: lavamos, secamos, dobramos e embalamos." },
     { title: "RETIRADA", desc: "Você recebe um aviso quando estiver tudo pronto para buscar." }
   ];
 
@@ -583,9 +583,14 @@ const Franchise = () => {
                 <p className="text-sm text-slate-500">Apoio na escolha do ponto e instalação das máquinas.</p>
               </div>
             </div>
-            <button className="bg-slate-900 text-white px-10 py-5 rounded-2xl font-black uppercase text-xs tracking-widest hover:bg-lavanderia-green transition-all shadow-xl shadow-slate-200">
+            <a 
+              href="https://wa.me/5561999996444"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-slate-900 text-white px-10 py-5 rounded-2xl font-black uppercase text-xs tracking-widest hover:bg-lavanderia-green transition-all shadow-xl shadow-slate-200 text-center"
+            >
               Quero ser um Franqueado
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -598,7 +603,7 @@ const FAQ = () => {
     { q: "Como funciona o autoatendimento?", a: "É simples: você escolhe a máquina, coloca suas roupas, realiza o pagamento via cartão ou app, e a máquina inicia automaticamente. Não precisa trazer sabão." },
     { q: "As máquinas já incluem sabão e amaciante?", a: "Sim, os produtos (sabão e amaciante profissionais) já são dosificados automaticamente pelas máquinas em cada ciclo." },
     { q: "Quanto tempo demora uma lavagem?", a: "O ciclo de lavagem dura aproximadamente 30 a 35 minutos, e a secagem em torno de 45 minutos." },
-    { q: "Posso lavar edredons e cobertores?", a: "Sim! Temos máquinas de grande capacidade ideais para enxovais pesados que não cabem em máquinas domésticas." },
+    { q: "Posso lavar edredons e cobertores?", a: "Sim! Temos máquinas de grande capacidade ideais para enxovais pesados que não cabem em máquinas domésticas e lavamos edredom do tamanho queen." },
     { q: "Quais as formas de pagamento aceitas?", a: "Aceitamos cartões de crédito, débito, PIX e pagamentos via aplicativo oficial." },
     { q: "As máquinas também secam a roupa?", a: "Sim, temos lavadoras e secadoras separadas para garantir que você saia com suas roupas prontas para o uso." },
     { q: "A lavanderia fica aberta em feriados?", a: "Nossas unidades funcionam 24 horas por dia, 7 dias por semana, incluindo feriados e finais de semana." },
@@ -652,9 +657,9 @@ const FAQ = () => {
 const RateUnits = () => {
   const units = [
     { name: "Posto Paraná", link: "#" },
-    { name: "Planaltina", link: "#" },
+    { name: "Rua Auta Vidal saída para Planaltina de Goiás", link: "#" },
     { name: "Posto Indaiá", link: "#" },
-    { name: "Distrito Bezerra", link: "#" }
+    { name: "Distrito do Bezerra", link: "#" }
   ];
 
   return (
@@ -715,9 +720,9 @@ const MapSection = () => {
 const InstagramSection = () => {
   const reels = [
     { id: 1, video: "https://res.cloudinary.com/dqukldtq1/video/upload/v1777562669/WhatsApp_Video_2026-04-27_at_4.22.37_PM_ghoprb.mp4", label: "Posto Paraná" },
-    { id: 2, video: "https://res.cloudinary.com/dqukldtq1/video/upload/v1777562668/WhatsApp_Video_2026-04-27_at_4.23.11_PM_x9ohtr.mp4", label: "Planaltina" },
-    { id: 3, video: "https://res.cloudinary.com/dqukldtq1/video/upload/v1777562655/WhatsApp_Video_2026-04-27_at_4.25.19_PM_vu5ssk.mp4", label: "Indaiá" },
-    { id: 4, video: "https://res.cloudinary.com/dqukldtq1/video/upload/v1777563470/WhatsApp_Video_2026-04-27_at_4.25.16_PM_v929gj.mp4", label: "Bezerra" },
+    { id: 2, video: "https://res.cloudinary.com/dqukldtq1/video/upload/v1777562668/WhatsApp_Video_2026-04-27_at_4.23.11_PM_x9ohtr.mp4", label: "Rua Auta Vidal saída para Planaltina de Goiás" },
+    { id: 3, video: "https://res.cloudinary.com/dqukldtq1/video/upload/v1777562655/WhatsApp_Video_2026-04-27_at_4.25.19_PM_vu5ssk.mp4", label: "Posto Indaiá" },
+    { id: 4, video: "https://res.cloudinary.com/dqukldtq1/video/upload/v1777563470/WhatsApp_Video_2026-04-27_at_4.25.16_PM_v929gj.mp4", label: "Distrito do Bezerra" },
   ];
 
   return (
